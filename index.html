@@ -2,89 +2,168 @@
 <!--
 	you found this, I'm not apple so I cant hire you, well done tho.
 -->
-<html>
+<html lang="en">
 	<head>
-		<title>Alexander M</title>
+		<title>Alexander Montolio</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Portfolio of Alexander Montolio — projects and applications, including A2, an AI agent being reimagined." />
+
+		<!-- Fonts: clean sans for gallery display, monospace utility to echo A2 -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet" />
+
+		<link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
+		<link rel="stylesheet" href="assets/css/apple.css" />
 	</head>
-	<body class="is-preload">
+	<body>
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="divided">
-
-				<!-- One -->
-					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
-						<div class="content">
-							<h1>My name is Alexander Montolio</h1>
-							<p class="major">Welcome to my porfolio, projects and applications, will be publishe here.</p>
-							<ul class="actions stacked">
-								<li><a href="https://mega.nz/file/1chGmCjb#cibVoqWi3uTA9i6-edS3Cnr_OZpQf7XAEAxXYsyWAnA" class="button big wide smooth-scroll-middle">Task away!</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="https://images.unsplash.com/photo-1494232410401-ad00d5433cfa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" />
-						</div>
-					</section>
-
-				<!-- Two -->
-					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
-						<div class="content">
-							<h2>A2 - Desktop Assistant</h2>
-							<p>A2, is a program created to assist questions and occasionally have short conversations, it can open websites and will recognize commands given to it.
-								it is text based, so it can only take typed commands. Imagin Siri in 2017, but muted.
-							</p>
-							<ul class="actions stacked">
-								<li><a href="https://bit.ly/36kpUaN" class="button">Download - win</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/spotlight01.png" alt="" />
-						</div>
-					</section>
-
-
-					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
-						<div class="content">
-							<h2>Tasks.</h2>
-							<p>This is a very simple and minimalistic looking app, not a remainder yet since I havent worked out the notifications on it; this is a list app, you add, edit, remove tasks on it, it saves all data withing the device is installed to, no external or internet connection required.</p>
-							<ul class="actions stacked">
-								<li><a href="https://mega.nz/file/1chGmCjb#cibVoqWi3uTA9i6-edS3Cnr_OZpQf7XAEAxXYsyWAnA" class="button">Get APK - android</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/spotlight02.jpg" alt="" />
-						</div>
-					</section>
-
-
-
-
-
-			
-					<footer class="wrapper style1 align-center">
-						<div class="inner">
-							<ul class="icons">
-								<i class=""></i>
-								<li><a href="https://github.com/dea6cat" class="icon brands style2  fab fa-github-alt"><span class="label">LinkedIn</span></a></li>
-								<li><a href="mailto:notalexander24@gmail.com" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
-							</ul>
-							<p>&copy; Portfolio. Design: <a href="https://github.com/dea6cat">dea6cat</a>.</p>
-						</div>
-					</footer>
-
+		<!-- Global navigation -->
+		<header class="nav">
+			<div class="inner nav__inner">
+				<a href="#top" class="nav__brand">[ AM ]</a>
+				<ul class="nav__links">
+					<li><a href="#a2" class="nav__link">A2</a></li>
+					<li><a href="mailto:notalexander24@gmail.com" class="nav__link">Contact</a></li>
+				</ul>
 			</div>
+		</header>
 
+		<main id="top">
 
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<!-- Hero — pure type on the gallery canvas -->
+			<section class="hero">
+				<div class="inner">
+					<p class="kicker hero__eyebrow">Portfolio</p>
+					<h1 class="hero__title">Alexander Montolio</h1>
+					<p class="hero__sub">Welcome. This is where my projects and applications get published.</p>
+					<div class="hero__actions">
+						<a href="mailto:notalexander24@gmail.com" class="btn btn--solid">Get in touch</a>
+						<a href="#a2" class="btn btn--ghost">Meet A2 <span class="arr">&rarr;</span></a>
+					</div>
+				</div>
+			</section>
+
+			<!-- A2 showcase — the app's pure-black world -->
+			<section class="showcase" id="a2">
+				<div class="inner">
+					<p class="kicker">Coming soon</p>
+					<h2 class="showcase__title">[ A2 ]</h2>
+					<p class="showcase__sub">An AI agent, reimagined from the ground up.</p>
+					<div class="showcase__actions">
+						<span class="btn btn--outline btn--disabled">Coming soon</span>
+					</div>
+					<div class="reticle" role="img" aria-label="A2">
+						<svg viewBox="0 0 240 240" aria-hidden="true">
+							<g class="r-reticle">
+								<g class="r-ring spin-cw"><circle cx="120" cy="120" r="96" fill="none" stroke-width="1.4" stroke-opacity=".55" stroke-dasharray="1.5 7"/></g>
+								<g class="r-ring spin-ccw"><circle cx="120" cy="120" r="82" fill="none" stroke-width="3" stroke-opacity=".32" stroke-dasharray="30 22"/></g>
+								<g class="r-ring spin-fast"><circle cx="120" cy="120" r="68" fill="none" stroke-width="1.6" stroke-opacity=".6" stroke-dasharray="2 9"/></g>
+								<circle cx="120" cy="120" r="54" fill="none" stroke-width="1" stroke-opacity=".28"/>
+								<g class="r-ring spin-ccw"><circle cx="120" cy="120" r="42" fill="none" stroke-width="1.4" stroke-opacity=".5" stroke-dasharray="1 7"/></g>
+								<g stroke-width="1.4" stroke-opacity=".7">
+									<line x1="120" y1="12" x2="120" y2="28"/><line x1="120" y1="212" x2="120" y2="228"/>
+									<line x1="12" y1="120" x2="28" y2="120"/><line x1="212" y1="120" x2="228" y2="120"/>
+								</g>
+								<circle cx="120" cy="120" r="7" fill="none" stroke-width="1.6"/>
+								<circle cx="120" cy="120" r="1.6" fill="#fff" stroke="none"/>
+							</g>
+							<!-- [ Λ ]2 fragment mark — exact geometry from a2_flutter
+							     _FragmentMarkPainter (doc space), centered (209,87) into the
+							     viewBox. Symmetric open-bottom caret; full left bracket; shorter
+							     right-bracket corner; the 2 at the right foot's baseline. The
+							     caret is two strokes from the apex so both legs draw together. -->
+							<g class="r-logo" transform="translate(120,120) scale(1.15) translate(-209,-87)">
+								<path class="r-stroke" pathLength="100" d="M200,30 L156,150"/>
+								<path class="r-stroke" pathLength="100" d="M200,30 L244,150"/>
+								<path class="r-stroke" pathLength="100" d="M136,38 L128,38 L128,138 L136,138"/>
+								<path class="r-stroke" pathLength="100" d="M264,38 L272,38 L272,102"/>
+								<text class="r-two" x="250" y="148" font-size="52">2</text>
+							</g>
+						</svg>
+					</div>
+					<p class="showcase__note reveal">In the spirit of <em>ELIZA</em> &mdash; the 1966 program that simulated conversation through pattern matching and substitution. A2 inherits the instinct, scaled until the patterns grow large enough to feel like thought.</p>
+				</div>
+			</section>
+
+			<!-- Capabilities — feature card grid -->
+			<section class="band band--white">
+				<div class="inner">
+					<div class="section-head reveal">
+						<span class="kicker">What it does</span>
+						<h2 class="section-head__title">Reimagined as an agent.</h2>
+						<p class="section-head__sub">What started as a muted desktop helper is becoming a real AI companion that lives in your pocket.</p>
+					</div>
+					<div class="grid">
+						<div class="card reveal">
+							<span class="kicker">On-device</span>
+							<h3 class="card__title">Thinks where you are</h3>
+							<p class="card__body">Private, quick answers that run locally &mdash; reaching for the cloud only when a problem needs more muscle.</p>
+						</div>
+						<div class="card reveal">
+							<span class="kicker">Not alone</span>
+							<h3 class="card__title">It doesn't think alone</h3>
+							<p class="card__body">When one answer won't do, A2 isn't limited to a single mind. Exactly how it works things out &mdash; that we'll keep to ourselves for now.</p>
+						</div>
+						<div class="card reveal">
+							<span class="kicker">Beyond chat</span>
+							<h3 class="card__title">It doesn't just talk</h3>
+							<p class="card__body">A2 reaches past the conversation to actually get things done. The full extent of what it can do, you'll find out at launch.</p>
+						</div>
+						<div class="card reveal">
+							<span class="kicker">Quietly</span>
+							<h3 class="card__title">It's paying attention</h3>
+							<p class="card__body">Some of what passes between you stays with it. What, and how much &mdash; we'll leave that to your imagination.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Roadmap — a selective, unordered teaser -->
+			<section class="band band--fog">
+				<div class="inner">
+					<div class="section-head reveal">
+						<span class="kicker">On the horizon</span>
+						<h2 class="section-head__title">There's more. We're just not saying.</h2>
+						<p class="section-head__sub">Plenty is planned &mdash; what's next stays strictly need-to-know.</p>
+					</div>
+				</div>
+			</section>
+
+		</main>
+
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="inner">
+				<ul class="footer__icons">
+					<li><a href="https://github.com/dea6cat" class="fab fa-github-alt" aria-label="GitHub"><span class="label">GitHub</span></a></li>
+					<li><a href="mailto:notalexander24@gmail.com" class="fa fa-envelope" aria-label="Email"><span class="label">Email</span></a></li>
+				</ul>
+				<p class="footer__copy">Design: <a href="https://github.com/dea6cat">dea6cat</a></p>
+			</div>
+		</footer>
+
+		<script>
+			// Scroll-triggered reveals — gravity-weighted, respects reduced motion.
+			(function () {
+				var els = document.querySelectorAll('.reveal');
+				if (!('IntersectionObserver' in window) ||
+					window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+					els.forEach(function (el) { el.classList.add('is-visible'); });
+					return;
+				}
+				var io = new IntersectionObserver(function (entries) {
+					entries.forEach(function (entry) {
+						if (entry.isIntersecting) {
+							entry.target.classList.add('is-visible');
+							io.unobserve(entry.target);
+						}
+					});
+				}, { threshold: 0.15 });
+				els.forEach(function (el) { io.observe(el); });
+			})();
+		</script>
 
 	</body>
 </html>
