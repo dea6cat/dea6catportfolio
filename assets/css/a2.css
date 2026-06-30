@@ -394,11 +394,11 @@ h1, h2, h3, p { margin: 0; }
 }
 .footer__icons a {
 	color: var(--color-snow);
-	font-size: 20px;
 	opacity: 0.85;
 	transition: opacity var(--dur-quick) var(--ease);
 }
 .footer__icons a:hover { opacity: 1; }
+.footer__icons svg { display: block; }
 .footer__icons .label {
 	position: absolute; width: 1px; height: 1px;
 	overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap;

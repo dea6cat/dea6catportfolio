@@ -16,10 +16,10 @@ The page was redesigned in an Apple-product-page style, skinned in the visual id
 
 ## Styling
 
-- The active stylesheet is the **hand-authored `assets/css/apple.css`** — there is no build step. All design tokens (color, type, spacing, radii, motion) are CSS custom properties in `:root` at the top of that file; edit those to retheme.
+- The active (and only) stylesheet is the **hand-authored `assets/css/a2.css`** — there is no build step. All design tokens (color, type, spacing, radii, motion) are CSS custom properties in `:root` at the top of that file; edit those to retheme.
 - The `[ bracket ]` label is the signature device — apply the `.kicker` class (it wraps content in brackets via `::before`/`::after`).
-- Font Awesome (`assets/css/fontawesome-all.min.css` + `assets/webfonts/`) is kept only for the footer icons. Inter + JetBrains Mono load from Google Fonts, falling back to the system SF Pro / SF Mono stack.
-- **Legacy (unused):** the old HTML5 UP "Story" template — `assets/css/main.css`, `assets/sass/`, and `assets/js/*.min.js` — is **no longer referenced** by `index.html`. Don't edit it expecting changes to show.
+- Fonts: Inter, JetBrains Mono, and Rajdhani (the `2` numeral) load from Google Fonts, falling back to the system SF Pro / SF Mono stack. Footer icons are **inline SVG** — there is no icon font.
+- The old HTML5 UP "Story" template (compiled CSS, SASS source, jQuery/vendored JS, webfonts, demo images) has been **deleted**. The repo is now just `index.html` + `assets/css/a2.css`.
 
 ## Conventions
 
