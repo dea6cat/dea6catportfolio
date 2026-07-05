@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>A2 — Alexander Montolio</title>
+	<meta name="description" content="A2 — an AI agent, reimagined from the ground up. A project by Alexander Montolio.">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/a2-page.css">
+</head>
+<body>
+
+<canvas id="rain" aria-hidden="true"></canvas>
+
+<header class="nav">
+  <div class="inner nav__inner">
+    <a href="index.html" class="nav__brand">Montolio</a>
+    <a href="index.html" class="nav__back" data-i18n-html="navBack"><span class="arr">&larr;</span> Portfolio</a>
+  </div>
+</header>
+
+<main>
+
+  <section class="showcase">
+    <div class="inner">
+      <span class="badge"><span class="badge__dot"></span><span data-i18n="badge">Coming soon</span></span>
+      <div><span class="kicker" data-i18n="kickerLead">The headline project</span></div>
+      <h1 class="showcase__title">A2</h1>
+      <p class="showcase__sub" data-i18n="sub">An AI agent, reimagined from the ground up.</p>
+
+      <div class="orb" role="img" aria-label="A2 mark">
+        <svg viewBox="0 0 240 240" aria-hidden="true">
+          <g class="rings">
+            <g class="r-ring spin-cw"><circle cx="120" cy="120" r="96" stroke-width="1.4" stroke-opacity=".55" stroke-dasharray="1.5 7"/></g>
+            <g class="r-ring spin-ccw"><circle cx="120" cy="120" r="82" stroke-width="3" stroke-opacity=".28" stroke-dasharray="30 22"/></g>
+            <g class="r-ring spin-fast"><circle cx="120" cy="120" r="68" stroke-width="1.6" stroke-opacity=".55" stroke-dasharray="2 9"/></g>
+            <circle cx="120" cy="120" r="54" stroke-width="1" stroke-opacity=".22"/>
+            <g class="r-ring spin-ccw"><circle cx="120" cy="120" r="42" stroke-width="1.4" stroke-opacity=".45" stroke-dasharray="1 7"/></g>
+            <g stroke-width="1.4" stroke-opacity=".65">
+              <line x1="120" y1="12" x2="120" y2="28"/><line x1="120" y1="212" x2="120" y2="228"/>
+              <line x1="12" y1="120" x2="28" y2="120"/><line x1="212" y1="120" x2="228" y2="120"/>
+            </g>
+            <circle cx="120" cy="120" r="7" stroke-width="1.6"/>
+          </g>
+          <g class="r-logo" transform="translate(120,120) scale(1.1) translate(-209,-87)">
+            <path class="mark" d="M200,30 L156,150"/>
+            <path class="mark" d="M200,30 L244,150"/>
+            <path class="mark" d="M136,38 L128,38 L128,138 L136,138"/>
+            <path class="mark" d="M264,38 L272,38 L272,102"/>
+            <text class="r-two" x="250" y="150" font-size="54">2</text>
+          </g>
+          <circle class="core" cx="120" cy="120" r="2.6"/>
+        </svg>
+      </div>
+
+      <p class="note reveal" data-i18n-html="note">In the spirit of <em>ELIZA</em> — the 1966 program that simulated conversation through pattern matching and substitution. A2 inherits the instinct, scaled until the patterns grow large enough to feel like thought.</p>
+    </div>
+  </section>
+
+  <section id="inside">
+    <div class="inner">
+      <div class="head reveal">
+        <span class="kicker" data-i18n="insideKicker">Inside A2</span>
+        <h2 class="head__title" data-i18n="insideTitle">Reimagined as an agent.</h2>
+        <p class="head__sub" data-i18n="insideSub">What started as a muted desktop helper is becoming a real AI companion that lives in your pocket.</p>
+      </div>
+      <div class="facets">
+        <article class="facet reveal">
+          <span class="kicker" data-i18n="f1k">On-device</span>
+          <h3 class="facet__title" data-i18n="f1t">Thinks where you are</h3>
+          <p class="facet__body" data-i18n="f1b">Private, quick answers that run locally — reaching for the cloud only when a problem needs more muscle.</p>
+        </article>
+        <article class="facet reveal">
+          <span class="kicker" data-i18n="f2k">Not alone</span>
+          <h3 class="facet__title" data-i18n="f2t">It doesn't think alone</h3>
+          <p class="facet__body" data-i18n="f2b">When one answer won't do, A2 isn't limited to a single mind. Exactly how it works things out — that we'll keep to ourselves for now.</p>
+        </article>
+        <article class="facet reveal">
+          <span class="kicker" data-i18n="f3k">Beyond chat</span>
+          <h3 class="facet__title" data-i18n="f3t">It doesn't just talk</h3>
+          <p class="facet__body" data-i18n="f3b">A2 reaches past the conversation to actually get things done. The full extent of what it can do, you'll find out at launch.</p>
+        </article>
+        <article class="facet reveal">
+          <span class="kicker" data-i18n="f4k">Quietly</span>
+          <h3 class="facet__title" data-i18n="f4t">It's paying attention</h3>
+          <p class="facet__body" data-i18n="f4b">Some of what passes between you stays with it. What, and how much — we'll leave that to your imagination.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="close">
+    <div class="inner">
+      <div class="head reveal">
+        <span class="kicker" data-i18n="closeKicker">On the horizon</span>
+        <h2 class="head__title" data-i18n="closeTitle">There's more. We're just not saying.</h2>
+        <p class="head__sub" data-i18n="closeSub">Plenty is planned — what's next stays strictly need-to-know. Be first to know when A2 lands.</p>
+      </div>
+      <a class="btn reveal" href="mailto:notalexander24@gmail.com" data-i18n-html="notifyBtn">Notify me <span aria-hidden="true">&rarr;</span></a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="inner footer__inner">
+    <p class="footer__copy"><a href="index.html" data-i18n-html="footerBack">&larr; Back to portfolio</a></p>
+    <p class="footer__copy" data-i18n="footerCredit">A2 — an Alexander Montolio project</p>
+  </div>
+</footer>
+
+<script>
+  // ── Matrix code-rain — ported from the main page, 3D depth, glowing head ──
+  (function () {
+    var canvas = document.getElementById('rain');
+    if (!canvas) return;
+    var ctx = canvas.getContext('2d');
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var chars = ("{}()[]<>;:=+-*/%!&|^~?.,#@_$" + "0123456789" +
+                 "def selfimport async await final var void return None True False lambda print").replace(/ /g, "").split('');
+    var fontSize = 16, rowsPerSec = 9, life = 1500, cols = 0, headPos = [], headRow = [], trails = [], scale = [], dpr = 1, raf = 0, lastTime = 0;
+    var bg = { r: 0, g: 0, b: 0 }, fg = { r: 106, g: 106, b: 110 }, hd = { r: 255, g: 255, b: 255 };
+
+    function hexToRgb(h) {
+      h = (h || '').trim();
+      if (h.charAt(0) === '#') h = h.slice(1);
+      if (h.length === 3) h = h[0] + h[0] + h[1] + h[1] + h[2] + h[2];
+      var n = parseInt(h, 16);
+      return isNaN(n) ? null : { r: (n >> 16) & 255, g: (n >> 8) & 255, b: n & 255 };
+    }
+    function readColors() {
+      var cs = getComputedStyle(document.documentElement);
+      bg = hexToRgb(cs.getPropertyValue('--black')) || bg;
+      fg = hexToRgb(cs.getPropertyValue('--mute')) || fg;
+      hd = hexToRgb(cs.getPropertyValue('--ink')) || hd;
+    }
+    function resize() {
+      dpr = Math.min(window.devicePixelRatio || 1, 2);
+      canvas.width = Math.floor(window.innerWidth * dpr);
+      canvas.height = Math.floor(window.innerHeight * dpr);
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      cols = Math.ceil(window.innerWidth / fontSize);
+      headPos = []; headRow = []; trails = []; scale = [];
+      for (var i = 0; i < cols; i++) { scale[i] = 0.5 + Math.random() * 0.8; headPos[i] = Math.random() * -40; headRow[i] = Math.floor(headPos[i]); trails[i] = []; }
+      ctx.fillStyle = 'rgb(' + bg.r + ',' + bg.g + ',' + bg.b + ')';
+      ctx.fillRect(0, 0, window.innerWidth, window.innerHeight);
+    }
+    function frame(now) {
+      var dt = Math.min((now - lastTime) / 1000, 0.05); lastTime = now;
+      var W = window.innerWidth, H = window.innerHeight;
+      ctx.fillStyle = 'rgb(' + bg.r + ',' + bg.g + ',' + bg.b + ')';
+      ctx.fillRect(0, 0, W, H);
+      ctx.textBaseline = 'top';
+      for (var i = 0; i < cols; i++) {
+        var s = scale[i], rh = fontSize * s;
+        var da = 0.28 + 0.72 * ((s - 0.5) / 0.8);
+        var x = i * fontSize;
+        headPos[i] += rowsPerSec * s * dt;
+        var row = Math.floor(headPos[i]);
+        if (row !== headRow[i]) {
+          headRow[i] = row;
+          if (row >= 0) trails[i].push({ row: row, ch: chars[(Math.random() * chars.length) | 0], t: now });
+          if (row * rh > H + rh && Math.random() > 0.94) { headPos[i] = Math.random() * -30; headRow[i] = Math.floor(headPos[i]); }
+        }
+        ctx.font = '600 ' + (fontSize * s).toFixed(1) + "px ui-monospace, 'JetBrains Mono', monospace";
+        var arr = trails[i], keepFrom = 0;
+        for (var j = 0; j < arr.length; j++) {
+          var age = now - arr[j].t;
+          if (age >= life) { keepFrom = j + 1; continue; }
+          var y = arr[j].row * rh;
+          if (j === arr.length - 1) {
+            ctx.shadowColor = 'rgba(' + hd.r + ',' + hd.g + ',' + hd.b + ',' + (0.6 * da).toFixed(3) + ')';
+            ctx.shadowBlur = 8 * da;
+            ctx.fillStyle = 'rgba(' + hd.r + ',' + hd.g + ',' + hd.b + ',' + (0.66 * da).toFixed(3) + ')';
+            ctx.fillText(arr[j].ch, x, y);
+            ctx.shadowBlur = 0;
+          } else {
+            var k = 1 - age / life;
+            ctx.fillStyle = 'rgba(' + fg.r + ',' + fg.g + ',' + fg.b + ',' + ((0.10 + 0.5 * k) * da).toFixed(3) + ')';
+            ctx.fillText(arr[j].ch, x, y);
+          }
+        }
+        if (keepFrom > 0) trails[i] = arr.slice(keepFrom);
+      }
+      raf = requestAnimationFrame(frame);
+    }
+
+    readColors();
+    resize();
+    window.addEventListener('resize', resize);
+    if (!reduce) { lastTime = performance.now(); raf = requestAnimationFrame(frame); }
+  })();
+
+  // ── Bilingual layer: detect browser language automatically (no toggle) ──
+  (function () {
+    var dict = {
+      en: {
+        navBack: "<span class=\"arr\">&larr;</span> Portfolio",
+        badge: "Coming soon",
+        kickerLead: "The headline project",
+        sub: "An AI agent, reimagined from the ground up.",
+        note: "In the spirit of <em>ELIZA</em> — the 1966 program that simulated conversation through pattern matching and substitution. A2 inherits the instinct, scaled until the patterns grow large enough to feel like thought.",
+        insideKicker: "Inside A2",
+        insideTitle: "Reimagined as an agent.",
+        insideSub: "What started as a muted desktop helper is becoming a real AI companion that lives in your pocket.",
+        f1k: "On-device", f1t: "Thinks where you are", f1b: "Private, quick answers that run locally — reaching for the cloud only when a problem needs more muscle.",
+        f2k: "Not alone", f2t: "It doesn't think alone", f2b: "When one answer won't do, A2 isn't limited to a single mind. Exactly how it works things out — that we'll keep to ourselves for now.",
+        f3k: "Beyond chat", f3t: "It doesn't just talk", f3b: "A2 reaches past the conversation to actually get things done. The full extent of what it can do, you'll find out at launch.",
+        f4k: "Quietly", f4t: "It's paying attention", f4b: "Some of what passes between you stays with it. What, and how much — we'll leave that to your imagination.",
+        closeKicker: "On the horizon",
+        closeTitle: "There's more. We're just not saying.",
+        closeSub: "Plenty is planned — what's next stays strictly need-to-know. Be first to know when A2 lands.",
+        notifyBtn: "Notify me <span aria-hidden=\"true\">&rarr;</span>",
+        footerBack: "&larr; Back to portfolio",
+        footerCredit: "A2 — an Alexander Montolio project"
+      },
+      es: {
+        navBack: "<span class=\"arr\">&larr;</span> Portafolio",
+        badge: "Próximamente",
+        kickerLead: "El proyecto principal",
+        sub: "Un agente de IA reimaginado desde cero.",
+        note: "En el espíritu de <em>ELIZA</em> — el programa de 1966 que simulaba conversación mediante coincidencia de patrones y sustitución. A2 hereda ese instinto, escalado hasta que los patrones crecen lo suficiente como para sentirse como pensamiento.",
+        insideKicker: "Dentro de A2",
+        insideTitle: "Reimaginado como agente.",
+        insideSub: "Lo que empezó como un discreto asistente de escritorio se está convirtiendo en un verdadero compañero de IA que vive en tu bolsillo.",
+        f1k: "En dispositivo", f1t: "Piensa donde estás", f1b: "Respuestas privadas y rápidas que se ejecutan localmente — recurriendo a la nube solo cuando un problema necesita más potencia.",
+        f2k: "No está solo", f2t: "No piensa solo", f2b: "Cuando una sola respuesta no basta, A2 no se limita a una única mente. Exactamente cómo lo resuelve — eso nos lo guardamos por ahora.",
+        f3k: "Más que chat", f3t: "No solo habla", f3b: "A2 va más allá de la conversación para de verdad hacer las cosas. Todo lo que puede hacer, lo descubrirás en el lanzamiento.",
+        f4k: "En silencio", f4t: "Está prestando atención", f4b: "Algo de lo que pasa entre ustedes se queda con él. Qué, y cuánto — lo dejamos a tu imaginación.",
+        closeKicker: "En el horizonte",
+        closeTitle: "Hay más. Simplemente no lo decimos.",
+        closeSub: "Hay mucho planeado — lo que viene es estrictamente confidencial. Sé el primero en saber cuándo llega A2.",
+        notifyBtn: "Avísame <span aria-hidden=\"true\">&rarr;</span>",
+        footerBack: "&larr; Volver al portafolio",
+        footerCredit: "A2 — un proyecto de Alexander Montolio"
+      }
+    };
+
+    function detect() {
+      var langs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || 'en'];
+      for (var i = 0; i < langs.length; i++) {
+        if ((langs[i] || '').toLowerCase().indexOf('es') === 0) return 'es';
+      }
+      return 'en';
+    }
+
+    function apply(lang) {
+      var d = dict[lang] || dict.en;
+      document.documentElement.lang = lang;
+      document.querySelectorAll('[data-i18n]').forEach(function (el) {
+        var v = d[el.getAttribute('data-i18n')]; if (v != null) el.textContent = v;
+      });
+      document.querySelectorAll('[data-i18n-html]').forEach(function (el) {
+        var v = d[el.getAttribute('data-i18n-html')]; if (v != null) el.innerHTML = v;
+      });
+    }
+
+    apply(detect());
+  })();
+
+  // ── Scroll reveals ──
+  (function () {
+    var els = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window) ||
+        window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      els.forEach(function (el) { el.classList.add('is-visible'); });
+      return;
+    }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) { entry.target.classList.add('is-visible'); io.unobserve(entry.target); }
+      });
+    }, { threshold: 0.14 });
+    els.forEach(function (el) { io.observe(el); });
+  })();
+</script>
+
+</body>
+</html>
