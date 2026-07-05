@@ -80,7 +80,7 @@
   @keyframes pulse { 0%,100% { opacity: 0.55; } 50% { opacity: 1; } }
 
   /* ── ELIZA note ── */
-  .note { max-width: 60ch; margin: 56px auto 0; font-size: 16px; line-height: 1.6; color: var(--soft); padding: 30px 34px; border: 1px solid var(--hairline); border-radius: var(--r-card); }
+  .note { max-width: 60ch; margin: 56px auto 0; font-size: 16px; line-height: 1.6; color: var(--soft); background: #121214; padding: 30px 34px; border: 1px solid var(--hairline); border-radius: var(--r-card); }
   .note em { color: var(--ink); font-style: italic; }
 
   /* ── Section head ── */
@@ -91,7 +91,7 @@
 
   /* ── Capability facets ── */
   .facets { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
-  .facet { background: var(--lift); border: 1px solid var(--hairline); border-radius: var(--r-card); padding: 34px 30px; display: flex; flex-direction: column; gap: 12px; transition: border-color 0.3s ease, transform 0.3s ease; }
+  .facet { background: #121214; border: 1px solid var(--hairline); border-radius: var(--r-card); padding: 34px 30px; display: flex; flex-direction: column; gap: 12px; transition: border-color 0.3s ease, transform 0.3s ease; }
   .facet:hover { border-color: rgba(255,255,255,0.35); transform: translateY(-3px); }
   .facet__title { font-weight: 500; font-size: 21px; letter-spacing: -0.02em; color: var(--ink); margin: 4px 0 0; }
   .facet__body { font-size: 15px; color: var(--soft); margin: 0; }
