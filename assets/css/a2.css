@@ -141,6 +141,10 @@
   .chip:hover { border-color: var(--ink-mute); transform: translateY(-2px); }
   .chip__glyph { width: 10px; height: 10px; transform: rotate(45deg); border: 1.5px solid var(--ink); }
 
+  .skills-groups { display: flex; flex-direction: column; gap: 36px; }
+  .skills-group { text-align: center; }
+  .skills__label { font-size: 14px; color: var(--ink-soft); max-width: 64ch; margin: 0 auto 14px; }
+
   /* ── Services ── */
   .services { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
   .service {
